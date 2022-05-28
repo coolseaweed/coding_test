@@ -1,8 +1,8 @@
 
+# info.
+# title: [1차] 추석 트래픽
 
 # 내 풀이
-
-
 def solution(lines):
     """
         테스트 1 〉	통과 (0.02ms, 10.2MB)
@@ -74,6 +74,8 @@ def solution(lines):
 
         # print(start_sec, end_sec, limit)
     return answer
+
+# 베스트 정답
 
 
 def best_solution(lines):
