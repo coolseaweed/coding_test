@@ -52,7 +52,8 @@ def printList(arr):
 
 # Driver Code
 if __name__ == "__main__":
-    arr = [12, 11, 13, 5, 6, 7]
+    arr = [-2, 3, -5]
+
     print("Given array is")
     printList(arr)
     mergeSort(arr)
