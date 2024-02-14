@@ -9,11 +9,7 @@ python main.py
 ## Concepts
 
 <p align="center">
-<figure>
 <img src = "https://upload.wikimedia.org/wikipedia/commons/c/cc/Merge-sort-example-300px.gif" alt="">
-<figcaption>From. wikipedia</figcaption>
-</img>
-</figure>
 </p>
 
 
