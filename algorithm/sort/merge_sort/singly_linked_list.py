@@ -1,7 +1,7 @@
 import sys
 
 sys.path.append("../../../algorithm")
-from common.LinkedList import ListNode, list2listNode, printListNode
+from DataStructures.LinkedList import ListNode, list2listNode, printListNode
 
 
 def merge_sort(head: ListNode):
