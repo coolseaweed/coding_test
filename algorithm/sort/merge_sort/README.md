@@ -23,12 +23,15 @@ python main.py
 4. 두 부분 리스트를 다시 하나의 정렬된 리스트로 병합한다.
 
 ### Complexity
-<a href="https://m.blog.naver.com/ndb796/221227934987" align="center">
+<p align="center">
+<img src = "./src/complexity.png" alt="">
+</p>
+<!-- <a href="https://m.blog.naver.com/ndb796/221227934987" align="center">
 <figure>
 <img src = "./src/complexity.png" alt="">
 <figcaption >From. 안경잡이 개발자</figcaption>
 </figure>
-</a>
+</a> -->
 
 **Merge Sort** 는 합치는 순간에 정렬을 수행한다. 수행단계가 증가할수록 합치는 리스트의 길이가 2배씩 증가하기 때문에 수행단계의 깊이는 `log(N)` 이다. 또한 각 단계별로 정렬 자체에 필요한 수행시간은 `N` 이므로 총 시간 복잡도는 `O(N * logN)`이다.
 > 각 단계별로 정렬하는데 `N` 번만 걸리는 이유는 삽입 정렬과 비슷하게 부분 집합 리스트가 이미 정렬이 되어 있는 상태라고 가정하기 때문이다. 이미 정렬되어 있는 것 두개를 합치는 것은 시간 복잡도 `O(N)` 이다.
