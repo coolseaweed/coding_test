@@ -9,12 +9,12 @@ python main.py
 ## Concepts
 
 <p align="center">
-<figure>
-<a href="https://en.wikipedia.org/wiki/Merge_sort" align="center">
+<img src = "https://upload.wikimedia.org/wikipedia/commons/c/cc/Merge-sort-example-300px.gif" alt="">
+<!-- <a href="https://en.wikipedia.org/wiki/Merge_sort" align="center">
 <img src = "https://upload.wikimedia.org/wikipedia/commons/c/cc/Merge-sort-example-300px.gif" alt="">
 <figcaption>From. wikipedia</figcaption>
-</a>
-</figure>
+</a> -->
+</img>
 </p>
 
 
