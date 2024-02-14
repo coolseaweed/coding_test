@@ -8,13 +8,14 @@ python main.py
 ```
 ## Concepts
 
-
-<figure align="center">
-<a href="https://en.wikipedia.org/wiki/Merge_sort">
+<p align="center">
+<figure>
+<a href="https://en.wikipedia.org/wiki/Merge_sort" align="center">
 <img src = "https://upload.wikimedia.org/wikipedia/commons/c/cc/Merge-sort-example-300px.gif" alt="">
 <figcaption>From. wikipedia</figcaption>
 </a>
 </figure>
+</p>
 
 
 **Merge sort** 알고리즘은 **Divide & Conquer** 알고리즘 중 하나로써 문제를 작은 2개의 문제로 분리하고 각각 해결한 다음 결과를 모아서 원래의 문제를 해결하는 전략이다.
