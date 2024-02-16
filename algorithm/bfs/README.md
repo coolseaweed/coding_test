@@ -1,7 +1,7 @@
 
 # Breadth First Search (BFS)
 
-
+## Concepts
 <p align="center">
 <img src = "https://i.gifer.com/Hw24.gif" alt="">
 </p>
