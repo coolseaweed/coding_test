@@ -1,6 +1,13 @@
 
 # Breadth First Search (BFS)
 
+## Test Algorithms
+
+- [basic](./main.py)
+- [binary tree](./binary_tree.py)
+
+
+## Concepts
 <p align="center">
 <img src = "https://upload.wikimedia.org/wikipedia/commons/4/46/Animated_BFS.gif" alt="">
 </p>
@@ -8,7 +15,7 @@
 **Breadth First Search (이하 BFS)** 란 root 노드(혹은 다른 임의의 노드)에서 시작해서 인접한 노드를 먼저 탐색하는 방법이다. 
 
 
-## Features
+### Features
 - 두 노드 사이의 최단 경로 혹은 임의의 경로를 찾고 싶을 때 이 방법을 사용한다. 
 - 재귀적으로 동작하지 않는 것은 **Depth-First Search(DFS)** 알고리즘과 유사하지만 구현할 때 **DFS** 와의 차이점이 두가지 존재한다: 
     1. 그래프 탐색의 경우 어떤 노드를 방문 했었는지 여부를 반드시 검사해야한다.
@@ -16,7 +23,7 @@
 
 - `Prim`, `Dijkstra` 알고리즘과 유사하다는 특징이 있다.
 
-## Algorithm Flow
+### Algorithm Flow
 <p align="center">
 <img src = "./src/BFS.png" alt="">
 </p>
@@ -31,7 +38,7 @@
     - Queue 에 방문된 노드를 삽입한다. 
 3. 큐가 소진될 때까지 계속한다.
 
-## Pseudocode
+### Pseudocode
 - input: A graph G and a starting node root of G
 - Output: Goal state. The parent links trace the shortest path back to root
 
@@ -51,10 +58,6 @@ procedure BFS(G, root) is
                 Q.enqueue(w)
 ```
 
-## Test Algorithms
-
-- [basic](./main.py)
-- [binary tree](./binary_tree.py)
 
 ## Complexity
 - `N`: Node 의 갯수
