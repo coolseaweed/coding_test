@@ -1,7 +1,3 @@
-from collections import deque
-from typing import List
-
-
 # Definition for a binary tree node.
 class TreeNode(object):
     def __init__(self, val=0, left=None, right=None):
@@ -10,23 +6,23 @@ class TreeNode(object):
         self.right = right
 
 
-def bfs(root: TreeNode) -> List[List[int]]:
+def BFS(root: TreeNode):
 
-    q, answer = deque([root] if root else []), []
+    q, answer = [root] if root else [], []
 
     while q:
 
         row = []
 
         for _ in range(len(q)):
-            node = q.popleft()
-            row.append(node.val)
+            node = q.pop(0)
 
-            if node.left:
+            if node:
+                row.append(node.val)
                 q.append(node.left)
-
-            if node.right:
                 q.append(node.right)
+            else:
+                row.append(None)
 
         answer.append(row)
     return answer
@@ -39,8 +35,6 @@ if __name__ == "__main__":
         val=3,
         left=TreeNode(
             val=9,
-            left=TreeNode(val=None),
-            right=TreeNode(val=None),
         ),
         right=TreeNode(
             val=20,
@@ -49,6 +43,6 @@ if __name__ == "__main__":
         ),
     )
 
-    answer = bfs(root)
+    answer = BFS(root)
 
     print(f"ANSWER: {answer}")
