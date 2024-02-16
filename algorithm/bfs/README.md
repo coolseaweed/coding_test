@@ -1,9 +1,8 @@
 
 # Breadth First Search (BFS)
 
-## Concepts
 <p align="center">
-<img src = "https://i.gifer.com/Hw24.gif" alt="">
+<img src = "https://upload.wikimedia.org/wikipedia/commons/4/46/Animated_BFS.gif" alt="">
 </p>
 
 **Breadth First Search (이하 BFS)** 란 root 노드(혹은 다른 임의의 노드)에서 시작해서 인접한 노드를 먼저 탐색하는 방법이다. 
