@@ -26,7 +26,7 @@ procedure BFS(G, root) is
                 w.parent := v
                 Q.enqueue(w)
 ```
-[Go to python code](./main.py)
+[Go to python code](./queue.py)
 
 
 ## Features

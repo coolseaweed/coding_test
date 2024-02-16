@@ -1,6 +1,3 @@
-from collections import deque
-
-
 def DFS_recursive(graph, root, visited=[]):
 
     visited.append(root)
