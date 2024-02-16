@@ -4,16 +4,19 @@ def bfs(graph, node, visited):
     visited[node] = True
 
     # 큐가 완전히 빌 때까지 반복
+    search = []
     while queue:
         # 큐에 삽입된 순서대로 노드 하나 꺼내기
         v = queue.pop(0)
         # 탐색 순서 출력
-        print(v, end=" ")
+        search.append(v)
         # 현재 처리 중인 노드에서 방문하지 않은 인접 노드를 모두 큐에 삽입
         for i in graph[v]:
             if not (visited[i]):
                 queue.append(i)
                 visited[i] = True
+
+    return search
 
 
 if __name__ == "__main__":
@@ -33,4 +36,5 @@ if __name__ == "__main__":
     visited = [False] * 9
 
     # 정의한 BFS 메서드 호출(노드 1을 탐색 시작 노드로 설정)
-    bfs(graph, 1, visited)
+    path = bfs(graph, 1, visited)
+    print(path)
