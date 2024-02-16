@@ -13,8 +13,8 @@ def bfs(graph, node, visited):
         # 현재 처리 중인 노드에서 방문하지 않은 인접 노드를 모두 큐에 삽입
         for i in graph[v]:
             if not (visited[i]):
-                queue.append(i)
                 visited[i] = True
+                queue.append(i)
 
     return search
 
