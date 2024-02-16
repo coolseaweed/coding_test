@@ -7,7 +7,7 @@
 **Depth-First Search (이하 DFS)** 란 root 노드(혹은 다른 임의의 노드)에서 시작해서 다음 분기(branch)로 넘어가기 전에 해당 분기를 완벽하게 탐색하는 방법.
 
 ## Pseudocode
-Input: Output: A recursive implementation of DFS:
+### Recursive implementation
 ```bash
 procedure DFS(G, v) is
     label v as discovered
@@ -15,6 +15,9 @@ procedure DFS(G, v) is
         if vertex w is not labeled as discovered then
             recursively call DFS(G, w)
 ```
+[Go to python code](./recursive.py)
+
+### Non-recursive implementation
 
 ```bash
 procedure DFS_iterative(G, v) is
@@ -27,11 +30,7 @@ procedure DFS_iterative(G, v) is
             for all edges from v to w in G.adjacentEdges(v) do 
                 S.push(w)
 ```
-
-
-
-## Test case
-- [basic](./main.py)
+[Go to python code](./non_recursive.py)
 
 
 ## Features

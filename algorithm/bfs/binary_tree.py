@@ -1,3 +1,6 @@
+from collections import deque
+
+
 # Definition for a binary tree node.
 class TreeNode(object):
     def __init__(self, val=0, left=None, right=None):
@@ -8,14 +11,14 @@ class TreeNode(object):
 
 def BFS(root: TreeNode):
 
-    q, answer = [root] if root else [], []
+    q, answer = deque([root] if root else []), []
 
     while q:
 
         row = []
 
         for _ in range(len(q)):
-            node = q.pop(0)
+            node = q.popleft()
 
             if node:
                 row.append(node.val)
