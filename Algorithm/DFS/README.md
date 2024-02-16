@@ -68,10 +68,3 @@ procedure DFS_iterative(G, v) is
 - [https://gmlwjd9405.github.io/2018/08/15/algorithm-bfs.html](https://gmlwjd9405.github.io/2018/08/15/algorithm-bfs.html) 
 - [https://en.wikipedia.org/wiki/Breadth-first_search](https://en.wikipedia.org/wiki/Breadth-first_search)
 
-# Tree Traversal
-
-<p align="center">
-<img src = "https://upload.wikimedia.org/wikipedia/commons/a/ac/Preorder-traversal.gif" width="200">
-<img src = "https://upload.wikimedia.org/wikipedia/commons/4/48/Inorder-traversal.gif" width="200">
-<img src = "https://upload.wikimedia.org/wikipedia/commons/2/28/Postorder-traversal.gif" width="200">
-</p>
