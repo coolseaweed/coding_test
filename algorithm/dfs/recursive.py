@@ -1,19 +1,12 @@
 from collections import deque
 
 
-def DFS(graph, root):
+def DFS_recursive(graph, root, visited=[]):
 
-    stack, visited = deque([root]), []
-
-    # 스택이 완전히 빌 때까지 반복
-    while stack:
-        # 스택에 삽입된 순서대로 노드 하나 꺼내기
-        node = stack.pop()
-
-        # 만약 노드가 방문한 목록에 없다면
+    visited.append(root)
+    for node in graph[root]:
         if node not in visited:
-            visited.append(node)
-            stack.extend(graph[node])
+            DFS_recursive(graph, node, visited)
 
     return visited
 
@@ -33,5 +26,5 @@ if __name__ == "__main__":
         "J": ["I"],
     }
 
-    path = DFS(graph, "A")
+    path = DFS_recursive(graph, "A")
     print(path)

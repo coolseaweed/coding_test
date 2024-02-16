@@ -17,7 +17,7 @@ procedure DFS(G, v) is
 ```
 [Go to python code](./recursive.py)
 
-### Non-recursive implementation
+### Stack implementation
 
 ```bash
 procedure DFS_iterative(G, v) is
@@ -30,7 +30,7 @@ procedure DFS_iterative(G, v) is
             for all edges from v to w in G.adjacentEdges(v) do 
                 S.push(w)
 ```
-[Go to python code](./non_recursive.py)
+[Go to python code](./stack.py)
 
 
 ## Features
