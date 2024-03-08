@@ -9,5 +9,10 @@ LRU cache can be implemented using two data structure:
 - Hash Map
 
 
+## Test LRU cache
+```bash
+python lru_cache.py
+```
+
 # Reference
 - [https://dailylifeofdeveloper.tistory.com/355](https://dailylifeofdeveloper.tistory.com/355)
