@@ -7,14 +7,13 @@ class LRUCache:
             self.prev = prev
             self.next = next
 
-    def __init__(self, max_size: int = 3) -> None:
+    def __init__(self, max_size: int) -> None:
         self.head = self.Node(None, None)
         self.tail = self.Node(None, None)
         self.head.next = self.tail
         self.tail.prev = self.head
         self.max_size = max_size
         self.cache = {}
-        self.curr_size = 0
 
     def _delete(self, node: Node):
         node_after = node.next
@@ -30,6 +29,7 @@ class LRUCache:
         temp.prev = node
 
     def get(self, key):
+        print(f"Trying to get key: {key}")
         if key in self.cache:
             node = self.cache[key]
             val = node.val
@@ -37,9 +37,9 @@ class LRUCache:
             self._delete(node)
             self._add(node)
             self.cache[key] = self.head.next
-            print(f"Hit! key: {key} -> val: {val}")
+            print(f"Hit!")
             return val
-        print(f"Miss! key: {key}")
+        print(f"Miss!")
         return None
 
     def put(self, key: int, val: int) -> None:
@@ -68,12 +68,14 @@ class LRUCache:
 if __name__ == "__main__":
     lru_cache = LRUCache(11)
     inputs = [(1, 1), (2, 2), (1, 1), (3, 3), (4, 4), (1, 1), (5, 5), (4, 4)]
+    print(f"PUT PROCESS:")
     for k, v in inputs:
         lru_cache.put(k, v)
         lru_cache.print_all()
-    print("---------------")
+    print("\nGET PROCESS:")
     lru_cache.get(1)
     lru_cache.print_all()
-    print("")
     lru_cache.get(11)
+    lru_cache.print_all()
+    lru_cache.get(2)
     lru_cache.print_all()
